@@ -1,5 +1,12 @@
-﻿using Microsoft.SemanticKernel;
+﻿using Microsoft.Extensions.Configuration;
+using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel.Connectors.OpenAI;
+
+var builder = new ConfigurationBuilder()
+            .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+            .AddJsonFile("local.appsettings.json", optional: true, reloadOnChange: true);
+
+IConfigurationRoot configuration = builder.Build();
 
 Console.WriteLine("Hello SK!");
 Console.WriteLine("Summarize:");
@@ -8,7 +15,7 @@ var userInput = Console.ReadLine();
 
 // create kernel with chat completion
 var kernel = Kernel.CreateBuilder()
-    .AddAzureOpenAIChatCompletion("MODEL_AI", "ENDPOINT", "API_KEY")
+    .AddAzureOpenAIChatCompletion(configuration["MODEL_AI"], configuration["ENDPOINT"], configuration["API_KEY"])
     .Build();
 
 var prompt = "Summarize the following text: {{$input}}";
