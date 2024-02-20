@@ -1,4 +1,6 @@
-﻿Console.WriteLine("Prompt Functions");
+﻿using Microsoft.Extensions.Configuration;
+
+Console.WriteLine("Prompt Functions");
 
 var builder = new ConfigurationBuilder()
             .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
