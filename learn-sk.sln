@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "hello-sk", "hello-sk\hello-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prompt-functions", "prompt-functions\prompt-functions.csproj", "{3F1FEE5A-D1FB-43AB-9B84-7AE103A5ED16}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kernel-memory", "kernel-memory\kernel-memory.csproj", "{D1430BC3-6E98-4953-8CBF-C6808CC2384E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{3F1FEE5A-D1FB-43AB-9B84-7AE103A5ED16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F1FEE5A-D1FB-43AB-9B84-7AE103A5ED16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F1FEE5A-D1FB-43AB-9B84-7AE103A5ED16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1430BC3-6E98-4953-8CBF-C6808CC2384E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1430BC3-6E98-4953-8CBF-C6808CC2384E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1430BC3-6E98-4953-8CBF-C6808CC2384E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1430BC3-6E98-4953-8CBF-C6808CC2384E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
